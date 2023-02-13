@@ -1,0 +1,14 @@
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\bin\Debug\DevAssessmentDB.mdf
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\bin\Debug\DevAssessmentDB_log.ldf
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\bin\Debug\DevAssessmentDB.dll.config
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\bin\Debug\DevAssessmentDB.dll
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\bin\Debug\DevAssessmentDB.pdb
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\bin\Debug\EntityFramework.dll
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\bin\Debug\EntityFramework.xml
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\obj\Debug\DevAssessmentDB.csproj.AssemblyReference.cache
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\obj\Debug\DevAssessmentDB.csproj.CoreCompileInputs.cache
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\obj\Debug\DevAssessmentDB.csproj.CopyComplete
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\obj\Debug\DevAssessmentDB.dll
+C:\Users\gauta\source\repos\DevAssessmentWPF\DevAssessmentDB\obj\Debug\DevAssessmentDB.pdb
