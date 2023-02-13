@@ -8,6 +8,14 @@
     <Window.Resources>
         <ViewModel:MainWindowViewModel x:Key="VM" />
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        <x:Array x:Key="StatusArray" Type="ViewModel:MainWindowViewModel">
+            <ViewModel:MainWindowViewModel Status="active" />
+            <ViewModel:MainWindowViewModel Status="inactive" />
+        </x:Array>
+        <x:Array x:Key="GenderArray" Type="ViewModel:MainWindowViewModel">
+            <ViewModel:MainWindowViewModel Gender="male" />
+            <ViewModel:MainWindowViewModel Gender="female" />
+        </x:Array>
     </Window.Resources>
     <Grid x:Name="MainGrid"    
         DataContext="{Binding Source={StaticResource VM}}"     
@@ -70,6 +78,14 @@
                     <DataGridTextColumn x:Name="ColumnStatus"    
                                     Header="Status" 
                                     Binding="{Binding Status}"/>
+                    <!--<DataGridComboBoxColumn x:Name="ColumnGender" DisplayMemberPath="Gender"
+                                    Header="Gender"
+                                    SelectedItemBinding="{Binding Gender , UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                    ItemsSource="{StaticResource GenderArray}"/>
+                    <DataGridComboBoxColumn x:Name="ColumnStatus" DisplayMemberPath="Status"
+                                    Header="Status"
+                                    SelectedValueBinding="{Binding Status, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                    ItemsSource="{StaticResource StatusArray}"/>-->
                 </DataGrid.Columns>
             </DataGrid>
             <StackPanel x:Name="StackPanelPatchDelete"    

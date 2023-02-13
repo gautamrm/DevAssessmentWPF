@@ -168,8 +168,8 @@ namespace DevAssessmentWPF.ViewModel
             }
             else
             {
-                //ResponseMessage = "Failed to update " + employee.Name + "'s details.";
-                ResponseMessage = employeeDetails.Result.ReasonPhrase.ToString();
+                ResponseMessage = "Failed to update " + employee.Name + "'s details.";
+                //ResponseMessage = employeeDetails.Result.ReasonPhrase.ToString();
             }
         }
 
