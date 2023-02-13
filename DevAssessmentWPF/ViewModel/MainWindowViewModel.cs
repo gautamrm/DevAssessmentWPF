@@ -161,29 +161,43 @@ namespace DevAssessmentWPF.ViewModel
         // Updates employee's record  
         private void UpdateEmployeeDetails(Employee employee)
         {
-            var employeeDetails = WebAPI.PutData(baseURL + "/" + employee.Id, employee);
-            if (employeeDetails.Result.StatusCode == System.Net.HttpStatusCode.OK)
+            if(employee is not null)
             {
-                ResponseMessage = employee.Name + "'s details successfully updated!";
+                var employeeDetails = WebAPI.PutData(baseURL + "/" + employee.Id, employee);
+                if (employeeDetails.Result.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    ResponseMessage = employee.Name + "'s details successfully updated!";
+                }
+                else
+                {
+                    ResponseMessage = "Failed to update " + employee.Name + "'s details.";
+                    //ResponseMessage = employeeDetails.Result.ReasonPhrase.ToString();
+                }
             }
             else
             {
-                ResponseMessage = "Failed to update " + employee.Name + "'s details.";
-                //ResponseMessage = employeeDetails.Result.ReasonPhrase.ToString();
+                ResponseMessage = "No data to update.";
             }
         }
 
         // Deletes employee's record  
         private void DeleteEmployeeDetails(Employee employee)
         {
-            var employeeDetails = WebAPI.DeleteData(baseURL + "/" + employee.Id);
-            if (employeeDetails.Result.StatusCode == System.Net.HttpStatusCode.OK)
+            if (employee is not null)
             {
-                ResponseMessage = employee.Name + "'s details successfully deleted!";
+                var employeeDetails = WebAPI.DeleteData(baseURL + "/" + employee.Id);
+                if (employeeDetails.Result.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    ResponseMessage = employee.Name + "'s details successfully deleted!";
+                }
+                else
+                {
+                    ResponseMessage = "Failed to delete " + employee.Name + "'s details.";
+                }
             }
             else
             {
-                ResponseMessage = "Failed to delete " + employee.Name + "'s details.";
+                ResponseMessage = "No row selected to delete.";
             }
         }
         #endregion
